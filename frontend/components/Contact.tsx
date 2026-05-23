@@ -5,20 +5,30 @@ export default function Contact() {
         <section className="section" id="contact">
             <h2>Contact</h2>
 
-            <div className="contactList">
-                <p>
-                    Email:{" "}
-                    <a href={`mailto:${profile.email}`}>
-                        {profile.email}
-                    </a>
-                </p>
+            <p className="sectionLead">{profile.contactMessage}</p>
 
-                <p>
-                    GitHub:{" "}
+            <div className="contactGrid">
+                <div className="contactCard">
+                    <span>Email</span>
+                    <a href={`mailto:${profile.email}`}>{profile.email}</a>
+                </div>
+
+                <div className="contactCard">
+                    <span>GitHub</span>
                     <a href={profile.github} target="_blank" rel="noreferrer">
                         {profile.github}
                     </a>
-                </p>
+                </div>
+
+                <div className="contactCard">
+                    <span>Location</span>
+                    <p>{profile.location}</p>
+                </div>
+
+                <div className="contactCard">
+                    <span>Job Target</span>
+                    <p>{profile.jobTarget}</p>
+                </div>
             </div>
         </section>
     );

@@ -11,6 +11,8 @@ export default function Hero() {
                 {profile.title}
             </h1>
 
+            <p className="heroHeadline">{profile.headline}</p>
+
             <p className="heroText">{profile.description}</p>
 
             <div className="heroActions">
@@ -18,10 +20,21 @@ export default function Hero() {
                     プロジェクトを見る
                 </a>
 
-                <a href="#contact" className="secondaryButton">
-                    お問い合わせ
+                <a
+                    href={profile.github}
+                    className="secondaryButton"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    GitHubを見る
                 </a>
             </div>
+
+            <ul className="heroStrengths">
+                {profile.strengths.map((strength) => (
+                    <li key={strength}>{strength}</li>
+                ))}
+            </ul>
         </section>
     );
 }
