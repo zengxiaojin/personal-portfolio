@@ -12,7 +12,7 @@
 
 ## 公開URL
 
-personal-portfolio-five-fawn-11.vercel.app
+https://personal-portfolio-five-fawn-11.vercel.app
 
 ## 主な内容
 
