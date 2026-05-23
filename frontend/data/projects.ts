@@ -34,8 +34,8 @@ export const projects: Project[] = [
         ],
         techs: ["Next.js", "TypeScript", "React", "CSS"],
         links: {
-            github: "",
-            demo: "personal-portfolio-five-fawn-11.vercel.app",
+            github: "https://github.com/zengxiaojin/personal-portfolio",
+            demo: "https://personal-portfolio-five-fawn-11.vercel.app",
         },
     },
 
