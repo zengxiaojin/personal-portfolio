@@ -35,30 +35,34 @@ export const projects: Project[] = [
         techs: ["Next.js", "TypeScript", "React", "CSS"],
         links: {
             github: "",
-            demo: "",
+            demo: "personal-portfolio-five-fawn-11.vercel.app",
         },
     },
+
     {
-        title: "Java Web アプリケーション",
+        title: "タスク管理アプリ",
         status: "制作予定",
         type: "Backend",
         description:
-            "Java、Spring Boot、MySQL を使用して、ログイン機能、CRUD機能、データベース連携を備えたWebアプリケーションを制作予定です。",
+            "Java Spring Boot と MySQL を使用して開発予定のタスク管理アプリです。タスクの作成・編集・削除・一覧表示、ステータス管理、期限日の設定など、基本的なCRUD機能を実装する予定です。",
         problem:
-            "バックエンド開発では、単に文法を理解するだけでなく、ユーザー管理、データ処理、DB連携を一つのアプリケーションとして組み合わせる力が必要です。",
+            "日々のタスクを整理せずに管理すると、作業の優先度や進捗状況が分かりにくくなり、対応漏れや遅延が発生しやすくなります。",
         solution:
-            "Spring Boot を使用して、ユーザー登録、ログイン、CRUD、MySQL 連携を含む基本的なWebアプリケーションを設計・実装する予定です。",
+            "Spring Boot を使用してREST APIを設計し、MySQLでタスク情報を管理します。タスクのCRUD機能、ステータス管理、期限日管理を実装し、基本的な業務アプリケーションの構成を意識して開発します。",
         result:
-            "Javaを使ったサーバーサイド開発、データベース設計、基本的なWebアプリケーション構成を実践的に証明することを目指しています。",
+            "Javaによるサーバーサイド開発、MySQLを使ったデータ永続化、REST API設計、CRUD処理の実装力を証明するプロジェクトとして制作を進める予定です。",
         points: [
-            "ユーザー登録・ログイン機能",
-            "データの作成・表示・更新・削除",
-            "MySQL を使用したデータ管理",
+            "タスクの作成・表示・更新・削除",
+            "ステータス管理",
+            "期限日の設定",
+            "MySQL を使用したデータ永続化",
+            "REST API によるデータ操作",
         ],
-        techs: ["Java", "Spring Boot", "MySQL"],
+        techs: ["Java", "Spring Boot", "MySQL", "Spring Data JPA", "REST API"],
         links: {
             github: "",
             demo: "",
         },
     },
+
 ];
